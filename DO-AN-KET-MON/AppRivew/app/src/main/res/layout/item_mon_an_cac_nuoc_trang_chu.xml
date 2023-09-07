@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"  >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgView_mon_an_cac_nuoc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/avatar1"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="10dp"
+        >
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+        android:id="@+id/textView_mon_an_cac_nuoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Món Thái"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="12dp"
+        />
+
+</androidx.cardview.widget.CardView>

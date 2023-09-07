@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA " />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppRivew"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.ThayDoiMatKhau"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ThayDoiThongTin"
+            android:exported="false" />
+        <activity
+            android:name=".controller.DangKy_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.Begin_Activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <activity
+            android:name=".controller.DangNhapActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".controller.ChiTiet_BaiDangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.TrangChuActivity"
+            android:exported="true">
+
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.ThayDoiThongTin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thông tin cá nhân"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#FBFBFB"
+            android:text="Lưu"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:id="@+id/btnUpdate"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/avt"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageAvt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:src="@drawable/anh5"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/avt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"/>
+
+        <EditText
+            android:paddingLeft="12dp"
+            android:id="@+id/edtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:background="@drawable/txt_radi"
+            android:hint="nguyen van a"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            />
+
+        <EditText
+            android:paddingLeft="12dp"
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:background="@drawable/txt_radi"
+            android:hint="A.123" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            />
+
+        <EditText
+            android:paddingLeft="12dp"
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:background="@drawable/txt_radi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Thông tin khác"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới tính"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            />
+        <Spinner
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/txt_radius"
+            android:id="@+id/edtGioiTinh"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            />
+
+        <EditText
+            android:paddingLeft="12dp"
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:background="@drawable/txt_radi"
+            android:hint="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khu vực"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            />
+
+        <EditText
+            android:paddingLeft="12dp"
+            android:id="@+id/edtKhuVuc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:background="@drawable/txt_radi"
+            android:hint="" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
